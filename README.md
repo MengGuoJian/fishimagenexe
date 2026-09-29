@@ -4,7 +4,7 @@
 
 ## 安装
 
-1. 下载 `ImageStudio_v0.1.2_binary.zip`，解压并保留完整的 `ImageStudio/` 文件夹。
+1. 下载 `ImageStudio_v0.1.4_binary.zip`，解压并保留完整的 `ImageStudio/` 文件夹。
 2. 双击 `ImageStudio.exe`；它必须与 `_internal/` 放在同一目录，不能单独下载 EXE。
 3. 配置与数据只写在用户本地的 `config.json` 和 `data/`，不会包含在此下载包中。
 
@@ -15,3 +15,7 @@
 以后发布新版：先修改项目 `VERSION` 和 `backend/VERSION`，通过 BuildTool 重新打包，然后运行 `pack-release.ps1`，将生成的 ZIP 与 `version.json` **一起提交到本仓库**。必须保证清单的 SHA-256 与上传的 ZIP 一致。不要提交源码或本机数据库。
 
 首次购买额度时，在软件中输入登记手机号/邮箱即可。拉取成功后号池保存在本机 `data/`，以后启动无需再次配置；ZIP 不包含任何用户数据。
+
+### v0.1.4 更新修复
+
+下载完成后会显示独立安装进度窗口，自动关闭旧程序、替换程序文件并重新打开。`config.json` 与 `data/` 保留；安装失败会回滚。旧版曾出现关闭后不再启动的问题，请先手动解压本版升级一次。
