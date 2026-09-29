@@ -1,0 +1,6 @@
+config.json
+data/
+*.db
+*.db.enc
+*.py
+node_modules/
